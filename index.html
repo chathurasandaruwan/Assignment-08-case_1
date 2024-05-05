@@ -96,6 +96,20 @@
 <script>
   let ar =["A","B","C","D","E","F"];
 
+  function changeValue() {
+    let latValue = ar.pop();
+    ar.unshift(latValue);
+
+    $(".letters").eq(0).text(ar[0]);
+    $(".letters").eq(1).text(ar[1]);
+    $(".letters").eq(2).text(ar[2]);
+    $(".letters").eq(3).text(ar[3]);
+    $(".letters").eq(4).text(ar[4]);
+    $(".letters").eq(5).text(ar[5]);
+
+  }
+  setInterval(changeValue , 2000);
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
